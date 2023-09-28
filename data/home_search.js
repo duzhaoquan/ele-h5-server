@@ -9,6 +9,11 @@ module.exports = () => {
         },
         {
           type: 1,
+          label: '布鲁斯比萨',
+          resultCount: 1,
+        },
+        {
+          type: 1,
           label: '达美乐比萨',
           resultCount: 1,
         },
