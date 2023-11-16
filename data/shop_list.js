@@ -55,7 +55,7 @@ module.exports = () => {
     const item = getItemData();
     item.id = i;
     item.shopName = item.shopName + `-${i}`;
-    item.postUrl = `/imgs/index_page/shop-list/post${i}.png`;
+    item.postUrl = `/imgs/index_page/shop-list/post${i % 5}.png`;
     result.push(item);
   }
   return result;
