@@ -10,6 +10,7 @@ const test = require("../data/test");
 const homePage = require("../data/home_page");
 const shopPage = require("../data/shop_page");
 const mePage = require("../data/me_page");
+const goodList = require("../data/good_list");
 
 function responseData(data) {
   return {
@@ -24,6 +25,7 @@ module.exports = () => {
     testjson0: test(),
     home_page: responseData(homePage()),
     me_page: responseData(mePage()),
-    shop_page: responseData(shopPage()),
+    // shop_page: responseData(shopPage()),
+    goods_list: responseData(goodList()),
   };
 };
