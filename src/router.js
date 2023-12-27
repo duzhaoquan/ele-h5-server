@@ -3,6 +3,7 @@ const home_search = require("./controller/home_search");
 const shop_list = require("./controller/shop_list");
 const auth = require("./controller/auth");
 const shop = require("./controller/shop_detail");
+const comment = require("./controller/comment_list");
 
 module.exports = (app) => {
   app.use("/api/test", test);
@@ -10,4 +11,5 @@ module.exports = (app) => {
   app.use("/api/shop_list", shop_list);
   app.use("/api/auth", auth);
   app.use("/api/shop_page", shop);
+  app.use("/api/comment_list", comment);
 };
